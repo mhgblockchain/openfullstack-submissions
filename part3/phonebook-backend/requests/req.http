@@ -1,0 +1,24 @@
+DELETE http://localhost:3000/api/persons/1 HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:3000/api/persons HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:3000/api/persons/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "mohammad2",
+    "number": "1231"
+}
+
+
+###
+# curl "http://localhost:3000/api/persons/" \
+#   --request POST \
+#   --data '{
+#     "name": "mohammad",
+#     "number": "123"
+# }'
